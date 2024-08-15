@@ -8,6 +8,7 @@ body {
     font-style: normal;
 
     background-color: #FFE8BA;
+
 }
 
 hr {
@@ -348,17 +349,20 @@ header nav ul li a {
 .griditem1,
 .griditem2,
 .griditem3 {
-    display: grid;
+    display: flex;
     border: none;
 
 }
 
 .griditem1 {
+    display: flex;
     font-size: 2rem;
     font-weight: 300;
     justify-content: start;
     padding-left: 3rem;
 }
+
+
 
 .griditem2 {
     justify-content: center;
@@ -386,11 +390,22 @@ header nav ul li a {
 
 .regular {
     font-size: 1rem;
+    position: relative;
+    top: 100px;
+    right: 250px;
 }
 
 .footer .griditem2 ul {
     list-style: none;
     text-align: left;
+    padding-left: 0;
+    padding-right: 100px;
+}
+
+.griditem4 {
+    position: relative;
+    top: 40px;
+    right: 130px;
 }
 
 .updates {
@@ -420,6 +435,13 @@ header nav ul li a {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+button:hover {
+    color: white;
+    background-color: black;
+    transition: color ease 0.4s, background-color ease 0.4s;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1000px) {
@@ -533,7 +555,7 @@ header nav ul li a {
     .footer {
         flex-direction: column;
         align-items: flex-start;
-
+        width: 30%;
         margin-top: 20px;
         padding-bottom: 100px;
     }
@@ -546,9 +568,16 @@ header nav ul li a {
     .griditem1 {
         position: relative;
         padding-right: 10%;
-        padding-left: 20px;
         margin-bottom: 50px;
         font-size: 1.8rem;
+    }
+
+    .griditem2 {
+        padding-left: 0;
+    }
+
+    .footer .griditem2 ul {
+        padding: 20px;
     }
 
     .griditem4 {
@@ -557,13 +586,6 @@ header nav ul li a {
         left: 180%;
         bottom: 5%;
 
-    }
-
-    .regular {
-        height: 150px;
-        position: absolute;
-        left: 100%;
-        top: 340%;
     }
 
     .sixth-section .updates {
@@ -594,7 +616,57 @@ header nav ul li a {
         color: black;
     }
 
+
+    .griditem1 .regular {
+
+        position: absolute;
+        left: 200%;
+        top: 150px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+
+        margin-top: 20px;
+        padding-bottom: 100px;
+    }
+
     .footer .regular {
         width: 100%;
+
+    }
+
+    .griditem1 {
+        position: relative;
+
+        padding-left: 20px;
+        margin-bottom: 50px;
+        font-size: 1.8rem;
+    }
+
+    .griditem4 {
+        width: 50%;
+        position: absolute;
+        left: 290%;
+        bottom: 5%;
+
+    }
+
+    .regular {
+        height: 150px;
+        position: absolute;
+        left: 200%;
+        top: 340%;
+    }
+
+    .sixth-section .updates {
+        width: 100%;
+        margin-top: 20px;
+        text-align: left;
+        margin-left: 40px;
     }
 }
