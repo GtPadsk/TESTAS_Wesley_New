@@ -134,14 +134,13 @@ header nav ul li a {
     height: 150px;
     margin-top: 100px;
 
-    display: grid;
+    display: flex;
     border: none;
-    grid-template-columns: 1fr 1fr;
 
     margin-bottom: 200px;
 }
 
-.grid-item-1 {
+.item-1 {
     display: grid;
     font-size: 4rem;
     padding-left: 3rem;
@@ -150,7 +149,7 @@ header nav ul li a {
 
 }
 
-.grid-item-2 {
+.item-2 {
     display: grid;
     justify-content: space-between;
     width: 80%;
@@ -158,8 +157,8 @@ header nav ul li a {
     font-size: 1.2rem;
 }
 
-.grid-item-2 a {
-    text-decoration: none;
+.item-2 a {
+
     color: black;
 }
 
@@ -179,7 +178,7 @@ header nav ul li a {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    width: 25%;
+    width: 70%;
 }
 
 .sitting-dog {
@@ -187,12 +186,17 @@ header nav ul li a {
 }
 
 .iris-collar {
-    width: 100%;
     margin-bottom: 40px;
 }
 
 .price-1 {
     font-size: 1.5rem;
+}
+
+.flex-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .fourth-segment {
@@ -281,6 +285,22 @@ header nav ul li a {
 .sixth-section h1 {
     font-size: 4rem;
     font-weight: 300;
+
+    a {
+        text-decoration: none;
+        position: relative;
+    }
+
+}
+
+.sixth-section h1 a::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    bottom: -5px;
+    left: 0;
 }
 
 .sixth-section a {
@@ -290,7 +310,6 @@ header nav ul li a {
 .last-grid-container {
     width: 100%;
     display: flex;
-    gap: 30px;
 }
 
 .last-grid-1,
@@ -301,9 +320,15 @@ header nav ul li a {
     border: none;
 }
 
+.last-grid-container-item {
+    display: flex;
+    margin: 10px;
+    gap: 20px;
+}
+
 .final-imgs {
     width: 100%;
-    border-radius: 40px;
+    border-radius: 20px;
 }
 
 .sixth-section h2 {
@@ -391,7 +416,42 @@ header nav ul li a {
     display: none;
 }
 
+.input-button {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 @media screen and (max-width: 1000px) {
+    .flex-parent {
+        display: flex;
+        justify-content: center;
+    }
+
+    .second-segment {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .second-segment .item-1 {
+        font-size: 3rem;
+        padding-left: 0;
+        font-weight: 300;
+    }
+
+
+    .sitting-dog {
+        width: 60%;
+    }
+
+    .iris-collar {
+        width: 100%;
+    }
+
+    .burger {
+        width: 60px;
+    }
+
     .burger {
         display: block;
     }
@@ -422,20 +482,119 @@ header nav ul li a {
         font-weight: 300;
         line-height: 140px;
     }
+
+    .fifth-segment {
+        height: 100vh;
+    }
+
+    .footer .regular {
+        width: 100%;
+    }
+
+    .third-segment {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .flex-1-empt {
+        flex: 1;
+    }
+
+    .grid-item-1-2 {
+        flex: 1;
+        margin-left: 20px;
+    }
+
+    .grid-item-2-2 {
+        flex: 1;
+        margin-right: 20px;
+    }
 }
 
 @media screen and (max-width: 576px) {
+    .burger {
+        width: 50px;
+    }
+
     .display-none-small {
         display: none !important;
     }
 
     .first-segment h1 {
-        font-size: 2rem;
+        font-size: 4rem;
         font-weight: 300;
-        line-height: 140px;
+        line-height: 100px;
+    }
+
+    .fifth-segment {
+        height: 100vh;
     }
 
     .footer {
         flex-direction: column;
+        align-items: flex-start;
+
+        margin-top: 20px;
+        padding-bottom: 100px;
+    }
+
+    .input-button {
+        flex-direction: row;
+
+    }
+
+    .griditem1 {
+        position: relative;
+        padding-right: 10%;
+        padding-left: 20px;
+        margin-bottom: 50px;
+        font-size: 1.8rem;
+    }
+
+    .griditem4 {
+        width: 60%;
+        position: absolute;
+        left: 180%;
+        bottom: 5%;
+
+    }
+
+    .regular {
+        height: 150px;
+        position: absolute;
+        left: 100%;
+        top: 340%;
+    }
+
+    .sixth-section .updates {
+        width: 400px;
+        margin-top: 20px;
+        text-align: left;
+    }
+
+    .last-grid-container-item {
+        flex-direction: column;
+    }
+
+    .second-segment {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .second-segment .item-1 {
+        font-size: 2rem;
+        padding-left: 0;
+    }
+
+    .second-segment .item-2 {
+        text-align: left;
+    }
+
+    .second-segment .item-2 a {
+        color: black;
+    }
+
+    .footer .regular {
+        width: 100%;
     }
 }
