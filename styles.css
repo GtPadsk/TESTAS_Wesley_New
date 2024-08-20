@@ -49,6 +49,15 @@ hr {
     font-weight: 500;
 }
 
+.fixed-image {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding-right: 5px;
+}
+
+.squarespace-img {}
+
 header nav ul {
     display: flex;
     align-items: center;
@@ -603,6 +612,7 @@ button:hover {
         padding-right: 10%;
         margin-bottom: 50px;
         font-size: 1.8rem;
+        width: 160px;
     }
 
     .griditem2 {
@@ -650,10 +660,14 @@ button:hover {
     }
 
 
-    .griditem1 .regular {
+    .regular {
 
         position: absolute;
-        left: 200%;
-        top: 150px;
+        left: 10rem;
+        top: 10rem;
+    }
+
+    .squarespace-text {
+        width: 100%;
     }
 }
