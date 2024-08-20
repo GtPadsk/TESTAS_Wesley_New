@@ -88,32 +88,6 @@ header nav ul li a {
 
 }
 
-/* .first-segment {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-
-    height: 100vh;
-
-}
-
-.large-text {
-    margin: 0;
-    font-size: 12rem;
-    letter-spacing: 5px;
-    scale: 60%;
-    font-weight: 400;
-}
-
-.dog-div {
-    width: 100%;
-    height: 100vh;
-    border: 1px solid black;
-    display: flex;
-    position: relative;
-} */
-
-
 .first-segment h1 {
     font-size: 9rem;
     font-weight: 300;
@@ -546,6 +520,52 @@ button:hover {
     }
 }
 
+@media screen and (max-width: 850px) {
+
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+
+        margin-top: 20px;
+        padding-bottom: 100px;
+    }
+
+    .footer .regular {
+        width: 100%;
+
+    }
+
+    .griditem1 {
+        position: relative;
+
+        padding-left: 20px;
+        margin-bottom: 50px;
+        font-size: 1.8rem;
+    }
+
+    .griditem4 {
+        width: 50%;
+        position: absolute;
+        left: 290%;
+        bottom: 5%;
+
+    }
+
+    .regular {
+        height: 150px;
+        position: absolute;
+        left: 200%;
+        top: 340%;
+    }
+
+    .sixth-section .updates {
+        width: 100%;
+        margin-top: 20px;
+        text-align: left;
+        margin-left: 40px;
+    }
+}
+
 @media screen and (max-width: 576px) {
     .burger {
         width: 50px;
@@ -635,51 +655,5 @@ button:hover {
         position: absolute;
         left: 200%;
         top: 150px;
-    }
-}
-
-@media screen and (max-width: 850px) {
-
-    .footer {
-        flex-direction: column;
-        align-items: flex-start;
-
-        margin-top: 20px;
-        padding-bottom: 100px;
-    }
-
-    .footer .regular {
-        width: 100%;
-
-    }
-
-    .griditem1 {
-        position: relative;
-
-        padding-left: 20px;
-        margin-bottom: 50px;
-        font-size: 1.8rem;
-    }
-
-    .griditem4 {
-        width: 50%;
-        position: absolute;
-        left: 290%;
-        bottom: 5%;
-
-    }
-
-    .regular {
-        height: 150px;
-        position: absolute;
-        left: 200%;
-        top: 340%;
-    }
-
-    .sixth-section .updates {
-        width: 100%;
-        margin-top: 20px;
-        text-align: left;
-        margin-left: 40px;
     }
 }
