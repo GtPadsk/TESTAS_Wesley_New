@@ -2,13 +2,10 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
-
     background-color: #FFE8BA;
-
     animation: fadeInAnimation ease 2.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -23,7 +20,6 @@ hr {
 
 .flex-container-1 {
     height: 90px;
-
     padding-left: 3rem;
     padding-right: 3rem;
     display: flex;
@@ -72,7 +68,6 @@ header nav ul li {
 }
 
 header nav ul li a {
-
     text-decoration: none;
     color: black;
 }
@@ -94,7 +89,6 @@ header nav ul li a {
 
 .number-for-cart {
     display: flex;
-
 }
 
 .first-segment h1 {
@@ -120,10 +114,8 @@ header nav ul li a {
 .second-segment {
     height: 150px;
     margin-top: 100px;
-
     display: flex;
     border: none;
-
     margin-bottom: 200px;
 }
 
@@ -131,9 +123,7 @@ header nav ul li a {
     display: grid;
     font-size: 4rem;
     padding-left: 3rem;
-
     border: none;
-
 }
 
 .item-2 {
@@ -145,7 +135,6 @@ header nav ul li a {
 }
 
 .item-2 a {
-
     color: black;
 }
 
@@ -192,7 +181,6 @@ header nav ul li a {
     display: flex;
     gap: 30px;
     justify-content: space-around;
-
 }
 
 .fourth-segment-img {
@@ -252,7 +240,6 @@ header nav ul li a {
 
 .large-paragraph {
     font-size: 1.6rem;
-
 }
 
 .arrow-svg {
@@ -277,7 +264,6 @@ header nav ul li a {
         text-decoration: none;
         position: relative;
     }
-
 }
 
 .sixth-section h1 a::after {
@@ -324,7 +310,6 @@ header nav ul li a {
     position: relative;
     right: 850px;
     bottom: 200px;
-
 }
 
 .footer {
@@ -337,7 +322,6 @@ header nav ul li a {
 .griditem3 {
     display: flex;
     border: none;
-
 }
 
 .griditem1 {
@@ -397,7 +381,6 @@ header nav ul li a {
 .updates {
     font-size: 1.3rem;
     position: relative;
-
 }
 
 .text-window {
